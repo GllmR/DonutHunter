@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hack-font/3.003/web/hack.min.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="/CSS/all.min.css">
+		<link rel="stylesheet" href="./CSS/style.css">
+		<title>🍩 DonutHunt 🍩</title>
+	</head>
+	<body>
+
+		<section class="container head">
+			<h1>🍩 DonutHunter 🍩</h1>
+			<div id='contRunner' class="col-2">Temps:<span id="runner"></span></div>
+		</section>
+
+		<section class="container">
+			<h2 id='leg'>Mangez des légumes !</h2>
+			<h2 id='gro'>N'oubliez pas de faire du sport !</h2>
+			<div id="duck">🍩</div>
+			<div id='mouseWin' class="row">
+				🍩 Miam Miam 🍩<br><span style="font-size: 15px;">La souris a gagné 🐁</span>
+			</div>
+			<div id='keyWin' class="row">
+				🤷 Le Donut a disparu ! 🙆‍<br><span style="font-size: 15px;">Le clavier a gagné ⌨️</span>
+			</div>
+			<div id="winner" class="row"></div>
+			<form action="#" id="nbPlayer">
+				<p>Sélectionnez le type de jeu:</p>
+				<button type="button" class="btn btn-outline-light" id="onePlayer">1 joueur</button>
+				<button type="button" class="btn btn-outline-light" id="multiPlayer">2 joueurs</button>
+			</form>
+			<form action="#" id="nbRoundSolo">
+				<p>Entre le nombre de manches contre le Donut:</p>
+				<input type="text" id="roundSolo" class="input">
+				<button type="submit" id="rSolo" class="btn btn-outline-light">Suivant</button>
+			</form>
+			<form action="#" id="speed">
+				<p>Choisis la vitesse:</p>
+				<button type="button" class="btn btn-outline-light" id="speed1">Cool</button>
+				<button type="button" class="btn btn-outline-light" id="speed2">Chaud</button>
+				<button type="button" class="btn btn-outline-light" id="speed3">Ahoutch</button>
+			</form>
+			<div id='playersName' class="jumbotron">
+				<form action="#" id="formOne">
+					<p>Entrez le nom du joueur clavier:</p>
+					<input type="text" id="playerOne" class="input" placeholder="Joueur 1">
+					<button type="submit" id="pOne" class="btn btn-outline-light">Suivant</button>
+				</form>
+				<form action="#" id="formTwo">
+					<p>Entrez le nom du joueur souris:</p>
+					<input type="text" id="playerTwo" class="input" placeholder="Joueur 2">
+					<button type="submit" id="pTwo" class="btn btn-outline-light">Suivant</button>
+				</form>
+				<form action="#" id="nbRound">
+					<p>Sélectionnez le nombres de manches:</p>
+					<button type="button" class="btn btn-outline-light" id="3rounds">3 Manches</button>
+					<button type="button" class="btn btn-outline-light" id="5rounds">5 Manches</button>
+				</form>
+			</div>
+			<div id="rules">
+				<h2>Règles du jeu:</h2>
+				Un joueur au clavier doit éviter les clics du joueur à la souris !<br>
+				Vous avez <b>trente</b> secondes !
+			</div>
+		</section>
+
+		<section class="container">
+			<button type="button" id='start' class="btn btn-outline-light btn-lg"> DéMaRrEr </button>
+			<button type="button" id='start2' class="btn btn-outline-light btn-lg"> DéMaRrEr </button>
+			<button type="button" id="restart" class="btn btn-outline-light btn-lg">Manche suivante</button>
+			<button type="button" id="restart2" class="btn btn-outline-light btn-lg">Manche suivante</button>
+			<button type="button" id="reset" class="btn btn-outline-light btn-lg">Reset</button>
+			<button type="button" id="replay" class="btn btn-outline-light btn-lg">Rejouer</button>
+		</section>
+
+		<footer class="container">
+			<div class="row footer">
+				<span>Yeah !</span>
+			</div>
+		</footer>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+		<script src="./JS/jquery.runner.js" type="text/javascript"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-awesome-cursor/0.3.1/jquery.awesome-cursor.min.js"></script>
+		<script src="./JS/script.js"></script>
+	</body>
+</html>

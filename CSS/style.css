@@ -1,0 +1,150 @@
+body {
+	color: snow;
+	background-color: black;
+	text-align: center;
+	font-family: hack;
+	cursor: cell;
+	min-height: 600px;
+	border: 1px solid snow;
+	overflow: hidden;
+}
+
+h1 {
+	padding: 3vh;
+	font-size: 5vh;
+	top: 45vh;
+}
+
+h2 {
+	font-size: 2.5vh;
+}
+
+.btn:hover {
+	box-shadow: 0px 0px 15px deeppink
+}
+
+.footer {
+	position: fixed;
+	display: flex;
+	top: 95%;
+	text-align: center;
+	border-top: 2px solid deeppink;
+	display: none;
+}
+
+#duck {
+	position: absolute;
+	display: none;
+	background-color: transparent;
+	text-shadow: 0px 4px 18px hotpink;
+	font-size: 5vh;
+	top: 48vh;
+	left: 48vw;
+	z-index: 666;
+	/* cursor: url(/imgs/cursor.cur), auto; */
+}
+
+#leg , #gro, #restart, #restart2, #start, #start2, #reset, #replay {
+	display: none;
+	text-decoration: underline deeppink;
+	margin-top: 25px;
+}
+
+#mouseWin , #keyWin , #winner {
+	display: none;
+	margin-top: 8vh;
+	padding: 35px;
+	font-size: 4vh;
+	border: 5px solid hotpink;
+	box-shadow: 0px 0px 18px deeppink;
+	border-radius: 8px;
+	z-index: 1;
+	background-color: black;
+}
+
+#playersName {
+	display: none;
+	margin: 35px;;
+	padding: 35px;
+	font-size: 22px;
+	border: 5px solid hotpink;
+	box-shadow: 0px 0px 18px deeppink;
+	border-radius: 8px;
+	z-index: 2;
+	background-color: black;
+}
+
+#rules, #speed, #nbRoundSolo {
+	display: none;
+	margin: 35px;;
+	padding: 35px;
+	font-size: 3vh;
+	border: 5px solid hotpink;
+	box-shadow: 0px 0px 18px deeppink;
+	border-radius: 8px;
+	z-index: 2;
+	background-color: black;
+}
+
+#nbPlayer {
+	padding: 35px;
+	font-size: 16px;
+	border: 5px solid hotpink;
+	box-shadow: 0px 0px 18px deeppink;
+	border-radius: 8px;
+	z-index: 2;
+	background-color: black;
+}
+
+#formTwo, #nbRound {
+	display: none;
+}
+
+#playerOne, #playerTwo {
+	margin: 15px;
+}
+
+#scoreP1 {
+	display: none;
+	position: fixed;
+	background-color: snow;
+	color: black;
+	top: 1px;
+	left: 10%;
+	border: 2px solid hotpink;
+	border-top: 1px solid snow;
+	border-radius: 0px 0px 20px 20px;
+	padding: 15px;
+	opacity: 0.9;
+	font-size: 1.5vh;
+}
+
+#scoreP2 {
+	display: none;
+	position: fixed;
+	background-color: snow;
+	color: black;
+	top: 1px;
+	right: 10%;
+	border: 2px solid hotpink;
+	border-top: 1px solid snow;
+	border-radius: 0px 0px 20px 20px;
+	padding: 15px;
+	opacity: 0.9;
+	font-size: 1.5vh;
+}
+
+#contRunner {
+	display: none;
+	position: absolute;
+	font-size: 1.5vh;
+	padding: 15px;
+	border-radius: 55px;
+	bottom: 10vh;
+	left: 41vw;
+	border: 2px solid hotpink;
+	margin: auto;
+	background-color: snow;
+	color: black;
+	opacity: 0.9;
+}
