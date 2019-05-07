@@ -268,8 +268,8 @@ $(function () {
 		$('#replay').hide();
 		$('#duck').html('🍩').css({
 			fontSize: '5vw',
-			top: "50vh",
-			left: "50vw"
+			top: "48vh",
+			left: "48vw"
 		});
 		posTop = 50;
 		posLeft = 50;
@@ -286,7 +286,7 @@ $(function () {
 		$('#duck').html('🍩').css({
 			fontSize: '5vh',
 			top: "48vh",
-			left: "48vh"
+			left: "48vw"
 		});
 		posTop = 50;
 		posLeft = 50;
@@ -295,6 +295,7 @@ $(function () {
 
 	function initPlayers(event){					// Fonction initialisation joueurs
 		event.preventDefault();
+		init();
 		if ($('#playerOne').val() == '') {
 			playerOne = 'Joueur 1';
 		} else {
