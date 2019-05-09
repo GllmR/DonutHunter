@@ -273,7 +273,7 @@ $(function () {
 		});
 		posTop = 50;
 		posLeft = 50;
-		speed = 10;
+		speed = 3;
 	};
 
 	function init() {								// Fonction reset
@@ -290,7 +290,7 @@ $(function () {
 		});
 		posTop = 50;
 		posLeft = 50;
-		speed = 10;
+		speed = 3;
 	};
 
 	function initPlayers(event){					// Fonction initialisation joueurs
