@@ -4,14 +4,17 @@ body {
 	text-align: center;
 	font-family: hack;
 	cursor: cell;
-	min-height: 600px;
 	border: 1px solid snow;
 	overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
 }
 
 h1 {
 	padding: 3vh;
-	font-size: 5vh;
+	font-size: 4vh;
 	top: 45vh;
 }
 
@@ -19,8 +22,16 @@ h2 {
 	font-size: 2.5vh;
 }
 
+button {
+  margin: .5em;
+}
+
+input {
+  margin: .5em;
+}
+
 .btn:hover {
-	box-shadow: 0px 0px 15px deeppink
+	box-shadow: 0px 0px 15px deeppink;
 }
 
 .footer {
@@ -54,7 +65,7 @@ h2 {
 	display: none;
 	margin-top: 8vh;
 	padding: 35px;
-	font-size: 4vh;
+	font-size: 2.5vh;
 	border: 5px solid hotpink;
 	box-shadow: 0px 0px 18px deeppink;
 	border-radius: 8px;
@@ -80,7 +91,7 @@ h2 {
 	display: none;
 	margin: 35px;;
 	padding: 35px;
-	font-size: 3vh;
+	font-size: 2.5vh;
 	border: 5px solid hotpink;
 	box-shadow: 0px 0px 18px deeppink;
 	border-radius: 8px;
