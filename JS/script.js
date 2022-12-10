@@ -398,23 +398,21 @@ $(function () {
 				$('#speed').slideUp();
 				autoMouve(1500);
 				speedy = 1500;
-				$('#start2').slideDown();
+        gameAuto()
 			});
 			$('#speed2').on('click', function() {
 				$('#speed').slideUp();
 				autoMouve(1000);
 				speedy = 1000;
-				$('#start2').slideDown();
+        gameAuto()
 			});
 			$('#speed3').on('click', function() {
 				$('#speed').slideUp();
 				autoMouve(500);
 				speedy = 500;
-				$('#start2').slideDown();
+        gameAuto()
 			});
-			$('#start2').on('click', gameAuto);
 			$(document).off('keydown', mouve);
-			// autoMouve(800);
 			playerOne = 'Toi';
 			playerTwo = 'LeDonut';
 			$('body').append('<div id="scoreP1">🍩 '+ playerOne + ' 🍩<br><span>Score:'+ scoreP1 +'</span></div>');
