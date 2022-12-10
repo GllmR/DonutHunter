@@ -187,16 +187,6 @@ $(function () {
 				$('#reset').slideDown().on('click', function(){
 					location.reload();
 				});
-				// $('#replay').slideDown().on('click', function(){
-				// 	$(this).hide();
-				// 	init();
-				// 	rounds=0;
-				// 	scoreP1 = 0;
-				// 	$('#scoreP1').html('🍩 '+ playerOne + ' 🍩<br><span>Score:'+ scoreP1 +'</span>');
-				// 	scoreP2 = 0;
-				// 	$('#scoreP2').html('🍩 '+ playerTwo + ' 🍩<br><span>Score:'+ scoreP2 +'</span>');
-				// 	$('#nbRoundSolo').fadeIn();
-				// });
 
 			} else {
 				$('#mouseWin').html('🍩 Miam miam 🍩<br><b>Gagné !</b>');
@@ -234,15 +224,6 @@ $(function () {
 				$('#reset').fadeIn().on('click', function(){
 					location.reload();
 				});
-				// $('#replay').fadeIn().on('click', function() {
-				// 	$(this).hide();
-				// 	init();
-				// 	scoreP1 = 0;
-				// 	$('#scoreP1').html('🍩 '+ playerOne + ' 🍩<br><span>Score:'+ scoreP1 +'</span>');
-				// 	scoreP2 = 0;
-				// 	$('#scoreP2').html('🍩 '+ playerTwo + ' 🍩<br><span>Score:'+ scoreP2 +'</span>');
-				// 	$('#nbRoundSolo').fadeIn();
-				// });
 
 			} else {
 				$('#leg').show();
@@ -356,7 +337,6 @@ $(function () {
 	});
 
 	 $('#start').on('click', game);
-	// $('#start2').on('click', gameAuto);
 
 	$('#restart').on('click', function() {
 		init();
@@ -420,9 +400,7 @@ $(function () {
 			$('#scoreP1').slideDown();
 			$('#scoreP2').slideDown();
 		})
-
 	});
-
 });
 
 
