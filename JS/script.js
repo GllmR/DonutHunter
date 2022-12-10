@@ -53,6 +53,12 @@ $(function () {
 	};
 
 	function autoMouve(speed) {						// Fonction déplacement automatique
+			var randNum1 = getRandomInt(100);
+			var randNum2 = getRandomInt(100);
+			$('#duck').animate({
+				top: randNum1 + 'vh',
+				left: randNum2 + 'vw' 
+			}, speed);
 		interv = setInterval(function() {
 			var randNum1 = getRandomInt(100);
 			var randNum2 = getRandomInt(100);
@@ -181,16 +187,6 @@ $(function () {
 				$('#reset').slideDown().on('click', function(){
 					location.reload();
 				});
-				// $('#replay').slideDown().on('click', function(){
-				// 	$(this).hide();
-				// 	init();
-				// 	rounds=0;
-				// 	scoreP1 = 0;
-				// 	$('#scoreP1').html('🍩 '+ playerOne + ' 🍩<br><span>Score:'+ scoreP1 +'</span>');
-				// 	scoreP2 = 0;
-				// 	$('#scoreP2').html('🍩 '+ playerTwo + ' 🍩<br><span>Score:'+ scoreP2 +'</span>');
-				// 	$('#nbRoundSolo').fadeIn();
-				// });
 
 			} else {
 				$('#mouseWin').html('🍩 Miam miam 🍩<br><b>Gagné !</b>');
@@ -228,15 +224,6 @@ $(function () {
 				$('#reset').fadeIn().on('click', function(){
 					location.reload();
 				});
-				// $('#replay').fadeIn().on('click', function() {
-				// 	$(this).hide();
-				// 	init();
-				// 	scoreP1 = 0;
-				// 	$('#scoreP1').html('🍩 '+ playerOne + ' 🍩<br><span>Score:'+ scoreP1 +'</span>');
-				// 	scoreP2 = 0;
-				// 	$('#scoreP2').html('🍩 '+ playerTwo + ' 🍩<br><span>Score:'+ scoreP2 +'</span>');
-				// 	$('#nbRoundSolo').fadeIn();
-				// });
 
 			} else {
 				$('#leg').show();
@@ -350,7 +337,6 @@ $(function () {
 	});
 
 	 $('#start').on('click', game);
-	// $('#start2').on('click', gameAuto);
 
 	$('#restart').on('click', function() {
 		init();
@@ -392,23 +378,21 @@ $(function () {
 				$('#speed').slideUp();
 				autoMouve(1500);
 				speedy = 1500;
-				$('#start2').slideDown();
+        gameAuto()
 			});
 			$('#speed2').on('click', function() {
 				$('#speed').slideUp();
 				autoMouve(1000);
 				speedy = 1000;
-				$('#start2').slideDown();
+        gameAuto()
 			});
 			$('#speed3').on('click', function() {
 				$('#speed').slideUp();
 				autoMouve(500);
 				speedy = 500;
-				$('#start2').slideDown();
+        gameAuto()
 			});
-			$('#start2').on('click', gameAuto);
 			$(document).off('keydown', mouve);
-			// autoMouve(800);
 			playerOne = 'Toi';
 			playerTwo = 'LeDonut';
 			$('body').append('<div id="scoreP1">🍩 '+ playerOne + ' 🍩<br><span>Score:'+ scoreP1 +'</span></div>');
@@ -416,9 +400,7 @@ $(function () {
 			$('#scoreP1').slideDown();
 			$('#scoreP2').slideDown();
 		})
-
 	});
-
 });
 
 

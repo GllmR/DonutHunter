@@ -14,7 +14,7 @@
 
 		<section class="container head">
 			<h1>🍩 DonutHunter 🍩</h1>
-			<div id='contRunner' class="col-2">Temps:<span id="runner"></span></div>
+			<div id='contRunner' class="col-3 col-md-2">Temps:<span id="runner"></span></div>
 		</section>
 
 		<section class="container">
@@ -28,38 +28,38 @@
 				🤷 Le Donut a disparu ! 🙆‍<br><span style="font-size: 15px;">Le clavier a gagné ⌨️</span>
 			</div>
 			<div id="winner" class="row"></div>
-			<form action="#" id="nbPlayer">
+			<div action="#" id="nbPlayer">
 				<p>Sélectionnez le type de jeu:</p>
 				<button type="button" class="btn btn-outline-light" id="onePlayer">1 joueur</button>
 				<button type="button" class="btn btn-outline-light" id="multiPlayer">2 joueurs</button>
-			</form>
-			<form action="#" id="nbRoundSolo">
+			</div>
+			<div id="nbRoundSolo">
 				<p>Entre le nombre de manches contre le Donut:</p>
-				<input type="text" id="roundSolo" class="input">
-				<button type="submit" id="rSolo" class="btn btn-outline-light">Suivant</button>
-			</form>
-			<form action="#" id="speed">
+				<input type="text" id="roundSolo" class="input col-md-8 m-auto">
+				<button type="button" id="rSolo" class="btn btn-outline-light">Suivant</button>
+			</div>
+			<div action="#" id="speed">
 				<p>Choisis la vitesse:</p>
 				<button type="button" class="btn btn-outline-light" id="speed1">Cool</button>
 				<button type="button" class="btn btn-outline-light" id="speed2">Chaud</button>
 				<button type="button" class="btn btn-outline-light" id="speed3">Ahoutch</button>
-			</form>
+			</div>
 			<div id='playersName' class="jumbotron">
-				<form action="#" id="formOne">
+				<div action="#" id="formOne">
 					<p>Entrez le nom du joueur souris:</p>
-					<input type="text" id="playerOne" class="input" placeholder="Joueur 1">
-					<button type="submit" id="pOne" class="btn btn-outline-light">Suivant</button>
-				</form>
-				<form action="#" id="formTwo">
+					<input type="text" id="playerOne" class="input col-md-8 m-auto" placeholder="Joueur 1">
+					<button type="button" id="pOne" class="btn btn-outline-light">Suivant</button>
+				</div>
+				<div action="#" id="formTwo">
 					<p>Entrez le nom du joueur clavier:</p>
-					<input type="text" id="playerTwo" class="input" placeholder="Joueur 2">
-					<button type="submit" id="pTwo" class="btn btn-outline-light">Suivant</button>
-				</form>
-				<form action="#" id="nbRound">
+					<input type="text" id="playerTwo" class="input col-md-8 m-auto" placeholder="Joueur 2">
+					<button type="button" id="pTwo" class="btn btn-outline-light">Suivant</button>
+				</div>
+				<div action="#" id="nbRound">
 					<p>Sélectionnez le nombres de manches:</p>
 					<button type="button" class="btn btn-outline-light" id="3rounds">3 Manches</button>
 					<button type="button" class="btn btn-outline-light" id="5rounds">5 Manches</button>
-				</form>
+				</div>
 			</div>
 			<div id="rules">
 				<h2>Règles du jeu:</h2>
@@ -70,7 +70,6 @@
 
 		<section class="container">
 			<button type="button" id='start' class="btn btn-outline-light btn-lg"> DéMaRrEr </button>
-			<button type="button" id='start2' class="btn btn-outline-light btn-lg"> DéMaRrEr </button>
 			<button type="button" id="restart" class="btn btn-outline-light btn-lg">Manche suivante</button>
 			<button type="button" id="restart2" class="btn btn-outline-light btn-lg">Manche suivante</button>
 			<button type="button" id="reset" class="btn btn-outline-light btn-lg">Reset</button>
