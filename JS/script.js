@@ -53,6 +53,12 @@ $(function () {
 	};
 
 	function autoMouve(speed) {						// Fonction déplacement automatique
+			var randNum1 = getRandomInt(100);
+			var randNum2 = getRandomInt(100);
+			$('#duck').animate({
+				top: randNum1 + 'vh',
+				left: randNum2 + 'vw' 
+			}, speed);
 		interv = setInterval(function() {
 			var randNum1 = getRandomInt(100);
 			var randNum2 = getRandomInt(100);
